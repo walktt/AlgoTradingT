@@ -1,0 +1,9 @@
+in database:
+create table data (
+    time timstamp,
+    open numeric(19,2),
+    close numeric(19,2),
+    high numeric(19,2),
+    low numeric(19,2),
+    dir varchar(10)
+);
