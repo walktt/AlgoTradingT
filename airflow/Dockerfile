@@ -77,6 +77,7 @@ RUN set -ex \
     && pip install flask-bcrypt \
     && pip install papermill \
     && pip install jupyter \
+    && pip install pyTelegramBotAPI \
     && if [ -n "${PYTHON_DEPS}" ]; then pip install ${PYTHON_DEPS}; fi \
     && apt-get purge --auto-remove -yqq ${BUILD_DEPS} \
     && apt-get autoremove -yqq --purge \
